@@ -1,0 +1,9 @@
+{
+    "routes": {
+        "basePath": "/",
+        "entryFile": "./src/index.ts",
+        "routesDir": "./src/router",
+        "middleware": "express",
+        "iocModule": "./src/di/inversify.config.ts"
+    }
+}
