@@ -1,6 +1,8 @@
 const BO = require("../../business/alertBO")
-modules.exports = {
+module.exports = {
     receiveAlert(req,res){
+        console.log(req.body)
+        console.log(req.params)
         req.body.strategyId = req.params.strategyId
         new Promisse (function(resolve,reject){
             BO.receiveAlert(req.body)

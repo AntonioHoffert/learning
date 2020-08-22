@@ -1,19 +1,21 @@
 const dao = require("../daos/alertsDao");
 module.exports = {
-    async geById(id){
+    async getById(id){
     try {
-        await dao.getById(id)
+        return await dao.getById(id)
+        
         } catch (error) {
             console.log(error)
+            return error
         }
     },
 
 async receiveAlert(alert){
     try {
-        await dao.receiveAlert(alert)
+        return await dao.receiveAlert(alert)
         } catch (error) {
             console.log(error)
+            return error
         }
     }
-
 }

@@ -41,7 +41,7 @@ module.exports = () => {
           required: true
         },
         strategyId: {
-          type: Number,
+          type: String,
           required: true
         }
      })

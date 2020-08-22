@@ -1,5 +1,7 @@
 const express = require("express")
-const router = new Express.Router()
-const alertController = ("../controllers/alerts")
+const router = new express.Router()
+const alertController = require("../controllers/alerts")
 
-router.post("alert/:strategyId",alertController.receiveAlert)
+
+router.post("/alert/:strategyId",alertController.receiveAlert)
+module.exports = router
